@@ -24,17 +24,17 @@
 
 LDAP_BEGIN_DECL
 
-/* LBER boolean, enum, integers (32 bits or larger) */
-#undef LBER_INT_T
+///* LBER boolean, enum, integers (32 bits or larger) */
+//#undef LBER_INT_T
 
-/* LBER tags (32 bits or larger) */
-#undef LBER_TAG_T
+///* LBER tags (32 bits or larger) */
+//#undef LBER_TAG_T
 
-/* LBER socket descriptor */
-#undef LBER_SOCKET_T
+///* LBER socket descriptor */
+//#undef LBER_SOCKET_T
 
-/* LBER lengths (32 bits or larger) */
-#undef LBER_LEN_T
+///* LBER lengths (32 bits or larger) */
+//#undef LBER_LEN_T
 
 /* ------------------------------------------------------------ */
 

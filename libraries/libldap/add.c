@@ -84,7 +84,6 @@ ldap_add( LDAP *ld, LDAP_CONST char *dn, LDAPMod **attrs )
 	return msgid;
 }
 
-
 BerElement *
 ldap_build_add_req(
 	LDAP *ld,

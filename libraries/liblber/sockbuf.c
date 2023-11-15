@@ -347,9 +347,10 @@ ber_pvt_socket_set_nonblock( ber_socket_t sd, int nb )
 		flags &= ~O_NONBLOCK;
 	}
 	return fcntl( sd, F_SETFL, flags );
-		
-#elif defined( FIONBIO )
-	ioctl_t status = nb ? 1 : 0;
+
+#elif defined(FIONBIO)
+#include <sys/ioctl.h>
+    ioctl_t status = nb ? 1 : 0;
 	return ioctl( sd, FIONBIO, &status );
 #endif
 }
